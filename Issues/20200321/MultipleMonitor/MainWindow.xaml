@@ -1,0 +1,16 @@
+﻿<Window x:Class="MultipleMonitor.MainWindow" x:Name="thisWin"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:MultipleMonitor"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <StackPanel>
+        <TextBlock Text="{Binding Path=Left, ElementName=thisWin }"/>
+        <TextBlock Text="{Binding Path=Top, ElementName=thisWin }"/>
+        <TextBlock Text="{Binding Path=ActualWidth, ElementName=thisWin }"/>
+        <TextBlock Text="{Binding Path=ActualHeight, ElementName=thisWin }"/>
+        <TextBox IsReadOnly="True" x:Name="SysInfo" TextWrapping="Wrap"></TextBox>
+    </StackPanel>
+</Window>
